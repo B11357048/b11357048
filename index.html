@@ -39,9 +39,10 @@
     <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="text-xl font-bold text-blue-800">黃翊瑄 Yi-Hsuan Huang</div>
-            <div class="hidden md:flex space-x-8 font-medium">
+            <div class="hidden md:flex space-x-8 font-medium italic items-center">
                 <a href="#about" class="hover:text-blue-600 transition">關於我</a>
                 <a href="#skills" class="hover:text-blue-600 transition">專業技能</a>
+                <a href="#ai-industrial" class="hover:text-blue-600 transition font-bold text-indigo-600">AI 產學實作</a>
                 <a href="#projects" class="hover:text-blue-600 transition">專案作品</a>
                 <a href="colab.html" class="text-orange-600 font-bold hover:text-orange-700 transition flex items-center gap-1">
                     <i data-lucide="code-2" class="w-4 h-4"></i> Colab 實作
@@ -62,11 +63,11 @@
                 <h2 class="text-blue-200 font-semibold tracking-wider mb-2">國立屏東科技大學 | 工業管理系 大二學生</h2>
                 <h1 class="text-4xl md:text-6xl font-bold mb-6">我是<span class="text-yellow-400">黃翊瑄</span><br>致力於探索效率優化的無限可能</h1>
                 <p class="text-lg text-blue-100 mb-8 max-w-xl">
-                    專注於工業工程基礎與數據分析，目前正深入研究生產管理及統計工具，期待將課堂理論轉化為實際解決方案。
+                    專注於工業工程基礎與數據分析。目前正深入研究生產管理及統計工具，期待將課堂理論轉化為實際解決方案。
                 </p>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4">
                     <a href="colab.html" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-bold shadow-lg transition flex items-center gap-2">
-                        <i data-lucide="external-link" class="w-5 h-5"></i> 查看我的 Colab 筆記
+                        <i data-lucide="brain-circuit" class="w-5 h-5"></i> 進入 AI 產學 Colab
                     </a>
                     <a href="#contact" class="bg-white/10 border border-white hover:bg-white/20 px-8 py-3 rounded-full font-bold transition">與我聯絡</a>
                 </div>
@@ -108,6 +109,37 @@
                     <div class="text-sm text-slate-500">全面提升</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- AI 產學介面 (新增) -->
+    <section id="ai-industrial" class="py-20 px-4 bg-gradient-to-r from-indigo-900 to-blue-900 text-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4 flex items-center justify-center gap-3">
+                <i data-lucide="cpu" class="text-indigo-400"></i> AI 產學實作介面
+            </h2>
+            <p class="text-indigo-200 mb-12 max-w-2xl mx-auto">
+                結合工業管理學理與人工智慧技術，透過 Google Colab 進行自動化排程優化、影像辨識品質檢測與預測性維修模擬。
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 text-left">
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+                        <i data-lucide="bar-chart-big" class="text-yellow-400 w-5 h-5"></i> 資料預測模型
+                    </h3>
+                    <p class="text-slate-300 text-sm">運用隨機森林與神經網路，針對產線歷史數據進行良率預測與異常偵測。</p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+                        <i data-lucide="clock" class="text-yellow-400 w-5 h-5"></i> 智能排程系統
+                    </h3>
+                    <p class="text-slate-300 text-sm">結合遺傳演算法 (GA)，優化多機台生產排序，大幅縮短最大完工時間 (Makespan)。</p>
+                </div>
+            </div>
+
+            <a href="colab.html" class="inline-flex items-center gap-3 bg-white text-indigo-900 px-10 py-4 rounded-full font-bold hover:bg-indigo-50 transition shadow-xl">
+                <i data-lucide="terminal" class="w-6 h-6 text-indigo-600"></i> 開啟個人專屬 AI 實作網頁
+            </a>
         </div>
     </section>
 
@@ -217,7 +249,7 @@
                 </div>
                 <a href="colab.html" class="flex items-center gap-3 hover:text-orange-400 transition">
                     <i data-lucide="file-code" class="text-orange-400"></i>
-                    <span>查看我的 Colab 筆記</span>
+                    <span>查看我的 AI Colab 筆記</span>
                 </a>
             </div>
 
